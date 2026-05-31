@@ -1,0 +1,149 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .pf { font-family: 'DM Sans', sans-serif; color: var(--color-text-primary); padding: 2.5rem 2rem; max-width: 780px; }
+  .hero { display: flex; flex-direction: column; gap: 6px; border-bottom: 0.5px solid var(--color-border-tertiary); padding-bottom: 2rem; margin-bottom: 2rem; }
+  .tag { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-secondary); font-weight: 500; }
+  .name { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 400; line-height: 1.15; }
+  .subtitle { font-size: 15px; color: var(--color-text-secondary); font-weight: 300; margin-top: 4px; }
+  .bio { font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; margin-top: 12px; max-width: 480px; }
+  .section-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-tertiary); font-weight: 500; margin-bottom: 1rem; }
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-bottom: 2rem; }
+  .contact-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 14px 16px; display: flex; align-items: center; gap: 12px; border: 0.5px solid var(--color-border-tertiary); cursor: pointer; transition: background 0.15s; text-decoration: none; color: inherit; }
+  .contact-card:hover { background: var(--color-background-primary); border-color: var(--color-border-secondary); }
+  .contact-icon { font-size: 20px; color: var(--color-text-secondary); }
+  .contact-info { display: flex; flex-direction: column; gap: 2px; overflow: hidden; }
+  .contact-label { font-size: 11px; color: var(--color-text-tertiary); }
+  .contact-value { font-size: 13px; color: var(--color-text-primary); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .works-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 2rem; }
+  .work-card { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); border: 0.5px solid var(--color-border-tertiary); overflow: hidden; }
+  .work-thumb { height: 110px; display: flex; align-items: center; justify-content: center; }
+  .work-thumb.c1 { background: #F1EFE8; }
+  .work-thumb.c2 { background: #E6F1FB; }
+  .work-thumb.c3 { background: #E1F5EE; }
+  .work-thumb.c4 { background: #FAEEDA; }
+  .work-thumb.c5 { background: #FBEAF0; }
+  .work-body { padding: 12px 14px; }
+  .work-title { font-size: 13px; font-weight: 500; margin-bottom: 2px; }
+  .work-meta { font-size: 11px; color: var(--color-text-tertiary); }
+  .skills-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; }
+  .skill-pill { font-size: 12px; padding: 5px 14px; border-radius: 999px; border: 0.5px solid var(--color-border-secondary); color: var(--color-text-secondary); background: var(--color-background-primary); }
+  .add-btn { border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-secondary); font-family: 'DM Sans', sans-serif; font-size: 12px; padding: 5px 14px; border-radius: 999px; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: background 0.15s; }
+  .add-btn:hover { background: var(--color-background-secondary); }
+  .footer { border-top: 0.5px solid var(--color-border-tertiary); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .footer-text { font-size: 12px; color: var(--color-text-tertiary); }
+  .avail-badge { font-size: 11px; padding: 4px 12px; border-radius: 999px; background: var(--color-background-success); color: var(--color-text-success); display: flex; align-items: center; gap: 5px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--color-text-success); }
+  .skill-add-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; align-items: center; }
+  .new-skill-input { font-family: 'DM Sans', sans-serif; font-size: 12px; padding: 5px 12px; border-radius: 999px; border: 0.5px dashed var(--color-border-secondary); background: transparent; color: var(--color-text-primary); outline: none; width: 140px; }
+</style>
+
+<div class="pf">
+  <h2 class="sr-only">Karamjeet Singh — Video Editor Portfolio</h2>
+
+  <div class="hero">
+    <span class="tag">Video Editor · Portfolio</span>
+    <h1 class="name">Karamjeet Singh</h1>
+    <p class="subtitle">Crafting stories through motion & visual rhythm</p>
+    <p class="bio">Passionate video editor with an eye for storytelling, timing, and aesthetics. From short-form reels to long-form films — I bring your vision to life.</p>
+  </div>
+
+  <div class="section-title">Contact</div>
+  <div class="contact-grid">
+    <a class="contact-card" href="https://wa.me/919876951699" target="_blank">
+      <i class="ti ti-brand-whatsapp contact-icon" aria-hidden="true" style="color:#25D366;"></i>
+      <div class="contact-info">
+        <span class="contact-label">WhatsApp</span>
+        <span class="contact-value">+91 9876951699</span>
+      </div>
+    </a>
+    <a class="contact-card" href="mailto:karamjeet02007@gmail.com">
+      <i class="ti ti-mail contact-icon" aria-hidden="true"></i>
+      <div class="contact-info">
+        <span class="contact-label">Gmail</span>
+        <span class="contact-value">karamjeet02007@gmail.com</span>
+      </div>
+    </a>
+    <a class="contact-card" href="https://www.instagram.com/karamjeet.singh077" target="_blank">
+      <i class="ti ti-brand-instagram contact-icon" aria-hidden="true" style="color:#E1306C;"></i>
+      <div class="contact-info">
+        <span class="contact-label">Instagram</span>
+        <span class="contact-value">@karamjeet.singh077</span>
+      </div>
+    </a>
+    <a class="contact-card" href="https://www.youtube.com/channel/UCYfGLIKPR7d1Z21jUyN6QTg" target="_blank">
+      <i class="ti ti-brand-youtube contact-icon" aria-hidden="true" style="color:#FF0000;"></i>
+      <div class="contact-info">
+        <span class="contact-label">YouTube</span>
+        <span class="contact-value">My Channel</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-title">My Work</div>
+  <div class="works-grid">
+    <div class="work-card">
+      <div class="work-thumb c1"><i class="ti ti-movie" style="font-size:36px;color:#888780;" aria-hidden="true"></i></div>
+      <div class="work-body"><div class="work-title">Cinematic Reel</div><div class="work-meta">Short film · 2024</div></div>
+    </div>
+    <div class="work-card">
+      <div class="work-thumb c2"><i class="ti ti-device-tv" style="font-size:36px;color:#185FA5;" aria-hidden="true"></i></div>
+      <div class="work-body"><div class="work-title">Brand Promo</div><div class="work-meta">Commercial · 2024</div></div>
+    </div>
+    <div class="work-card">
+      <div class="work-thumb c3"><i class="ti ti-video" style="font-size:36px;color:#0F6E56;" aria-hidden="true"></i></div>
+      <div class="work-body"><div class="work-title">Social Media Reels</div><div class="work-meta">Instagram · 2025</div></div>
+    </div>
+    <div class="work-card">
+      <div class="work-thumb c4"><i class="ti ti-music" style="font-size:36px;color:#BA7517;" aria-hidden="true"></i></div>
+      <div class="work-body"><div class="work-title">Music Video</div><div class="work-meta">Punjab · 2025</div></div>
+    </div>
+    <div class="work-card">
+      <div class="work-thumb c5"><i class="ti ti-heart" style="font-size:36px;color:#993556;" aria-hidden="true"></i></div>
+      <div class="work-body"><div class="work-title">Wedding Film</div><div class="work-meta">Event · 2025</div></div>
+    </div>
+    <div class="work-card" style="border: 1.5px dashed var(--color-border-secondary); cursor:pointer;" onclick="sendPrompt('Help me add a real project with title, description and YouTube or drive link to my portfolio')">
+      <div class="work-thumb" style="height:110px;background:transparent;display:flex;align-items:center;justify-content:center;"><i class="ti ti-plus" style="font-size:28px;color:var(--color-text-tertiary);" aria-hidden="true"></i></div>
+      <div class="work-body"><div class="work-title" style="color:var(--color-text-tertiary);">Add your project ↗</div><div class="work-meta">Tap to add</div></div>
+    </div>
+  </div>
+
+  <div class="section-title">Skills</div>
+  <div class="skill-add-row" id="skills-container">
+    <span class="skill-pill">Premiere Pro</span>
+    <span class="skill-pill">After Effects</span>
+    <span class="skill-pill">DaVinci Resolve</span>
+    <span class="skill-pill">Final Cut Pro</span>
+    <span class="skill-pill">Color Grading</span>
+    <span class="skill-pill">Motion Graphics</span>
+    <span class="skill-pill">Reels Editing</span>
+    <span class="skill-pill">Sound Design</span>
+    <span class="skill-pill">Transitions & VFX</span>
+    <span class="skill-pill">Thumbnail Design</span>
+    <span class="skill-pill">YouTube Editing</span>
+    <span class="skill-pill">Wedding Videography</span>
+    <span class="skill-pill">Storytelling</span>
+    <span class="skill-pill">CapCut</span>
+    <input class="new-skill-input" id="skill-input" placeholder="+ Add skill" />
+  </div>
+
+  <div class="footer">
+    <span class="footer-text">© 2025 Karamjeet Singh · Video Editor</span>
+    <span class="avail-badge"><span class="dot"></span> Available for work</span>
+  </div>
+</div>
+
+<script>
+  const input = document.getElementById('skill-input');
+  const container = document.getElementById('skills-container');
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && input.value.trim()) {
+      const pill = document.createElement('span');
+      pill.className = 'skill-pill';
+      pill.textContent = input.value.trim();
+      container.insertBefore(pill, input);
+      input.value = '';
+    }
+  });
+</script>
